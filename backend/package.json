@@ -16,9 +16,9 @@
       "xlsx": "^0.18.5"
     },
     "devDependencies": {
-      "node-gyp": "^9.1.0",
-      "python": "^3.9.0"
+      "node-gyp": "^9.1.0"
     }
   }
+  
   
 
