@@ -3,16 +3,22 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
-        "rebuild": "npm rebuild"
+      "start": "node server.js",
+      "rebuild": "npm rebuild",
+      "install": "npm install --production && npm rebuild"
     },
     "dependencies": {
-        "better-sqlite3": "^11.9.1",
-        "cors": "^2.8.5",
-        "exceljs": "^4.4.0",
-        "express": "^4.17.1",
-        "json2csv": "^6.0.0-alpha.2",
-        "xlsx": "^0.18.5"
+      "better-sqlite3": "^11.9.1",
+      "cors": "^2.8.5",
+      "exceljs": "^4.4.0",
+      "express": "^4.17.1",
+      "json2csv": "^6.0.0-alpha.2",
+      "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+      "node-gyp": "^9.1.0",
+      "python": "^3.9.0"
     }
-}
+  }
+  
 
