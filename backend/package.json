@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "rebuild": "npm rebuild"
     },
     "dependencies": {
         "better-sqlite3": "^11.9.1",
@@ -14,3 +15,4 @@
         "xlsx": "^0.18.5"
     }
 }
+
