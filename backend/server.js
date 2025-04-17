@@ -1,5 +1,5 @@
 const express = require('express');
-const sqlite3 = require('sqlite3').verbose();
+const Database = require('better-sqlite3');
 const cors = require('cors');
 const ExcelJS = require('exceljs');
 
@@ -9,7 +9,7 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-const db = new sqlite3.Database('./inventory.db', (err) => {
+const db = new Database('inventory.db', (err) => {
   if (err) {
     console.error('Error al conectar a la base de datos:', err.message);
   } else {
