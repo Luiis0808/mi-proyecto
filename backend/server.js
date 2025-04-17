@@ -9,13 +9,12 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-const db = new Database('inventory.db', (err) => {
-  if (err) {
-    console.error('Error al conectar a la base de datos:', err.message);
-  } else {
-    console.log('Conectado a la base de datos SQLite');
-  }
-});
+try {
+  const db = new Database('inventory.db', {});
+  console.log('Conectado a la base de datos SQLite');
+} catch (err) {
+  console.error('Error al conectar a la base de datos:', err.message);
+}
 
 
 // Crear tablas de materiales y personas (una sola vez)
