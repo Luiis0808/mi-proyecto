@@ -17,6 +17,7 @@ const db = new Database('inventory.db', (err) => {
   }
 });
 
+
 // Crear tablas de materiales y personas (una sola vez)
 db.serialize(() => {
   db.run(`
